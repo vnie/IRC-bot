@@ -19,7 +19,7 @@ def joinchan(chan):
     ircsock.send(bytes("JOIN " + chan + "\n", "utf-8"))
 
 def hello():
-    ircsock.send(bytes("PRIVMSG " + channel + " :Hello!\n", "utf-8"))
+    ircsock.send(bytes("PRIVMSG " + channel + " :Victor is the best!\n", "utf-8"))
 
 if __name__ == '__main__':
     ircsock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
